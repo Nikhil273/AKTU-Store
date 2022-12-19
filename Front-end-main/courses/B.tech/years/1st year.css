@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Poppins:wght@300&family=Raleway:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+body{
+    background: url("2.jpg") no-repeat;
+    background: cover;
+    width: 100%;
+}
+.logo{
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+}
+.main {
+    background:url("back.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;   
+    color: rgb(255, 255, 255);
+    height: 50vh;
+    width: 100%;
+}
+.head{
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background-color: rgb(55, 127, 160);
+    padding: 10px 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    position: relative;
+    float: left;
+}
+.navbar ul li a{
+    font-size: 17px;
+    padding: 18px;
+    text-decoration: none;
+    margin: 0px 12px;
+    color: white;
+    display: block;
+}
+.navbar ul li a:hover{
+    background-color: rgb(85, 112, 134);
+    
+}
+.navbar ul li ul{
+    position: absolute;
+    left: 0;
+    display: none;
+    width: 182px;
+    background-color: rgb(115, 179, 209);
+}
+.navbar ul li ul li{
+    width: 109%;
+}
+.navbar ul li ul li ul{
+    left: 140px;
+    top: 30px;
+}
+.navbar ul li:hover > ul{
+    display: inline;
+    
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.ul{
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+    list-style: none;
+    margin-left:22% ;
+}
+
+.ul li a{
+    color: aliceblue;
+    padding: 22px 12px;
+    font-size: 40px;
+    margin: 12px 52px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: rgb(67, 167, 255);
+}
+.ul li a:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(47, 108, 133);
+    border: 5px solid rgb(199, 73, 28);
+}
+
+.openmenu{
+    display: none;
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+#closemenu{
+    display: none;
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media(max-width: 990px){
+    .openmenu{
+        display: initial;
+        margin-left: 233px;
+        margin-right: 35px ;
+        float: right;
+    }
+    .head{
+        display: flow-root;
+    }
+    .heading{
+        padding: 65% 0%;
+    }
+    .navbar{
+        display: absolute;
+        top: 100%;
+        display: none;
+        transition: 0.6s;
+        left: 0;
+        right: 0;
+    }
+    .navbar ul li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    .navbar ul li ul li{
+        left: 0;
+    }
+    .navbar ul li ul li{
+        width: 100%;
+    }
+    .navbar ul li ul li ul li{
+        top: -28px;
+        left: -140px;    
+    }
+    #closemenu{
+        float: right;
+        margin-right: 35px ;
+    }
+    .active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .main h1{
+        margin-top: 62px;
+        padding: 38% 22%;
+    }
+    .btn1{
+        display: inline-block;
+    }
+    .btn1{
+        margin-left: 28%;
+        margin-top: -27px;
+    }
+    .btn1 ul li a{
+        margin: 0px 0px;
+        padding: 28px 25px;
+        font-size: 30px;
+    }
+    .btn1 ul{
+        display: block;  
+    }
+    .ul{
+        margin: 0px 0px;
+        display: block;
+    }
+    .ul li a{
+        padding: 20px 13px;
+    }
+    .btn-p{
+        margin-left: -25px;
+        margin-right: -33px;
+    }
+    .btn{
+        margin: 24% 0px;
+    }
+}
