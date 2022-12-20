@@ -6,8 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soham0w0sarkar/AKTU-Store.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soham0w0sarkar/AKTU-Store/issues"
+  },
+  "homepage": "https://github.com/soham0w0sarkar/AKTU-Store#readme",
   "dependencies": {
     "live-server": "^1.2.2"
   }
