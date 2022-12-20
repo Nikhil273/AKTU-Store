@@ -28,54 +28,7 @@
 
 <body>
     <section id="header">
-        <div class="head active">
-            <a class="logo" href="/index.html">Aktu Store</a>
-            <div class="openmenu"><i class="fa-solid fa-bars"></i></a></div>
-            <div id="closemenu"><i class="fa-solid fa-xmark"></i></div>
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-store"></i> Store <i class="fa-solid fa-angle-down"></i></a>
-                        <ul>
-                            <li class="hover"><a href="#">BCA<i class="fa-solid fa-angle-right"></i></a>
-                                <ul>
-                                    <li> <a href="#">1st year</a></li>
-                                    <li> <a href="#">2nd year</a></li>
-                                    <li> <a href="#">3rd year</a></li>
-                                    <li> <a href="#">4th year</a></li>
-                                </ul>
-                            </li>
-                            <li class="hover"><a href="#">MBA<i class="fa-solid fa-angle-right"></i></a>
-                                <ul>
-                                    <li> <a href="#">1st year</a></li>
-                                    <li> <a href="#">2nd year</a></li>
-                                    <li> <a href="#">3rd year</a></li>
-                                    <li> <a href="#">4th year</a></li>
-                                </ul>
-                            </li>
-                            <li class="hover"><a href="#">B.TECH <i class="fa-solid fa-angle-right"></i></a>
-                                <ul>
-                                    <li> <a href="/courses/B.tech/years/First year series.html">1st year</a></li>
-                                    <li> <a href="/courses/B.tech/years/Second year series.html">2nd year</a></li>
-                                    <li> <a href="/courses/B.tech/years/Third year series.html">3rd year</a></li>
-                                    <li> <a href="/courses/B.tech/years/Fourth year series.html">4th year</a></li>
-                                </ul>
-                            </li>
-                            <li class="hover b"><a href="#">B.PHARMA <i class="fa-solid fa-angle-right"></i></a>
-                                <ul>
-                                    <li> <a href="#">1st year</a></li>
-                                    <li> <a href="#">2nd year</a></li>
-                                    <li> <a href="#">3rd year</a></li>
-                                    <li> <a href="#">4th year</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="head active" include-html="header.html" ></div>
 
         <div class="cover">
             <DIV class="heading">
@@ -106,7 +59,7 @@
         <div class="B-PHARMA block">
             <img id="course-img-2" class="img" src="img/course/2.jpg" alt="">
             <div class="course">
-                <h2>B-PHARMA</h2>
+                <h2>B.PHARMA</h2>
                 <p>Download all type of notes,quantum,last year paper and many more for any year</p>
                 <br>
                 <a class="button" href="/courses/B.pharma/B.pharma.html">QUANTUM</a>
@@ -156,9 +109,10 @@
             </div>
         </div>
 
-
+        
     </footer>
 </body>
+<script src="./inserthtml.js"></script>
 <script src="index.js"></script>
 <script src="https://kit.fontawesome.com/a3c813f76d.js"></script>
 
