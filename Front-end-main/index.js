@@ -6,9 +6,9 @@ const head = document.querySelector(".head");
 openmenu.addEventListener("click", show);
 closemenu.addEventListener("click", close);
 
-// head.addEventListener('mouseover',(e)=>{
-//     if(e.target.classlist.include("nav-menu"));
-// });
+head.addEventListener("mouseover", (e) => {
+  if (e.target.classlist.include("nav-menu"));
+});
 
 function show() {
   navbar.style.display = "block";

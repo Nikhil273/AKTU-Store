@@ -38,25 +38,37 @@
   margin-top: 80px;
   margin-left: 17%;
 }
-.ul {
-  display: flex;
-  list-style: none;
-  margin-left: 12px;
+
+.btn {
+  width: 18%;
+  text-align: center;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #fff;
+  box-shadow: 1px 0px 15px -5px rgba(0, 0, 0, 0.34);
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 20px;
 }
 
-.ul li a {
-  color: aliceblue;
-  margin: 1px 50px;
-  padding: 22px 12px;
-  font-size: 40px;
-  border-radius: 20px;
-  text-decoration: none;
-  background-color: rgb(74, 143, 204);
+.btn:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: rgb(105, 151, 226);
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+  opacity: 0.3;
 }
-.btn1 ul li a:hover {
-  color: rgb(17, 73, 240);
-  background-color: rgb(31, 203, 255);
-  border: 5px solid;
+
+.btn:hover:before {
+  width: 100%;
 }
 
 .openmenu {
@@ -70,6 +82,12 @@
   color: aliceblue;
   font-size: 30px;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
 
 @media (max-width: 990px) {
@@ -129,14 +147,7 @@
     margin-left: 28%;
     margin-top: -27px;
   }
-  .btn1 ul li a {
-    margin: 0px 0px;
-    padding: 28px 25px;
-    font-size: 30px;
-  }
-  .btn1 ul {
-    display: block;
-  }
+
   .btn {
     margin: 60% 0px;
   }
